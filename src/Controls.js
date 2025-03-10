@@ -75,7 +75,7 @@ const Controls = ({ d3Data, closeRoots, setTimelineShowing, highlightedFamily, s
         <i className="fa fa-times" aria-hidden="true"></i>
       </div>
 
-      <div id="legend">
+      <div id="legend" className="top-right">
         {showingLegend &&
           <div id="legend-content">
             <h2 onClick={handleClick}>legend</h2>
@@ -119,6 +119,12 @@ const Controls = ({ d3Data, closeRoots, setTimelineShowing, highlightedFamily, s
           </>
         }
         <p id="surnames-button" className={showingsurnames && 'active'} onClick={toggleSurnames}>{'names'}</p>
+      </div>
+      
+      <div id="github-repo" className="bottom-left">
+        <a href="https://github.com/julhaas91/family-tree-3d" target="_blank" rel="noopener noreferrer">
+          <p id="github-button">{'GitHub Repo'}</p>
+        </a>
       </div>
     </div>
   )

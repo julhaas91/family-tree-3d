@@ -1,8 +1,23 @@
 @use '../base/color';
 @use '../mixins/neumorph';
 
-#controls #back-button, #controls #legend, #controls #surnames, #node-info {
+#controls #back-button, #controls #legend, #controls #surnames, #node-info, #controls #github-repo {
   z-index: 2;
+}
+
+// Positioning utility classes
+.top-right {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: auto !important;
+  left: auto !important;
+}
+
+.bottom-left {
+  bottom: 0 !important;
+  left: 0 !important;
+  top: auto !important; 
+  right: auto !important;
 }
 
 #back-button {
@@ -179,6 +194,35 @@
 
     p {
       margin: 5px 0px;
+    }
+  }
+}
+
+/* GitHub Repo Button */
+#github-repo {
+  position: fixed;
+  margin: 15px;
+
+  a {
+    text-decoration: none;
+  }
+
+  #github-button {
+    width: 100px;
+    margin: 0px;
+    padding: 3px 15px;
+    text-align: center;
+    color: #888;
+    @include neumorph.neumorph;
+    border-radius: 15px;
+
+    &:hover {
+      cursor: pointer;
+      @include neumorph.neumorph-hover;
+    }
+
+    &:active {
+      @include neumorph.neumorph-active;
     }
   }
 }
