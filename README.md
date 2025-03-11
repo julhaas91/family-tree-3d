@@ -30,6 +30,8 @@ This project is based on [Blood Lines](https://github.com/oh-kay-blanket/blood-l
 
 Blood Lines relies on [GEDCOM-d3](https://github.com/oh-kay-blanket/gedcom-d3), a custom GEDCOM parser derived from [tmcw/parse-gedcom](https://github.com/tmcw/gedcom).
 
+Shout-out to [Kayla Plunkett](https://github.com/oh-kay-blanket) for the great work!
+
 ## About GEDCOM
 [GEDCOM](https://github.com/tmcw/gedcom) is a standard for exchanging genealogical data across different software. Most genealogy programs allow exporting family trees as GEDCOM files.
 
